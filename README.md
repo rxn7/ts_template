@@ -1,16 +1,8 @@
-# ts_template
-Typescript project template
+# Run with hot reloading
+run `npm run dev`
 
-# Requirements
-- minify
-- live-server
-- typescript
+# Build
+run `npm run build`
 
-# Building
-run `./build.sh`  
-
-# Running
-run `./run.sh` (this will automatically reload when changes are made to build files)
-
-# Deploying
-run `./deploy.sh` to deploy the project to Github Pages
+Deploying to github pages
+run `npm run deploy`
