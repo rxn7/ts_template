@@ -1,7 +1,7 @@
 {
-	"name": "treegen",
+	"name": "",
+	"description": "",
 	"version": "0.0.0",
-	"description": "Tree generation using Lindenmayer system",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/rxn7/treegen.git"
@@ -10,7 +10,7 @@
 		"typescript"
 	],
 	"scripts": {
-        "minify": "minify static/index.html > build/index.html & minify static/style.css > build/style.css",
+		"minify": "minify static/index.html > build/index.html & minify static/style.css > build/style.css",
 
 		"build:src": "mkdir -p build & tsc --project $(pwd)",
 		"build:static": "mkdir -p build & cp -r static/* build ",
@@ -18,7 +18,7 @@
 
 		"watch:src": "tsc --watch --project $(pwd)",
 		"watch:static": "watch 'npm run build:static' ./static",
-        "watch": "npm run watch:static & npm run watch:src",
+		"watch": "npm run watch:static & npm run watch:src",
 
 		"deploy": "npm run build && npm run minify && gh-pages --dist build",
 
@@ -27,7 +27,7 @@
 	},
 	"author": "rxn7",
 	"license": "ISC",
-	"homepage": "https://github.com/rxn7/treegen",
+	"homepage": "https://maciejniziolek.xyz",
 	"dependencies": {
 	},
 	"devDependencies": {
