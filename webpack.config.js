@@ -11,12 +11,8 @@ module.exports = {
 				exclude: /node_modules/,
 			},
 			{
-				test: /\.(ogg|mp3)$/i,
-				include: path.resolve(__dirname, 'src/assets/audio'),
-				type: 'asset/resource',
-				generator: {
-					filename: 'assets/audio/[name][ext]',
-				}
+				test: /\.css$/i,
+				use: ['style-loader', 'css-loader']
 			},
 		],
 	},
